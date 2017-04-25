@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/helmet"
+			xmlns:tns="http://www.epam.com/trapeznikau/helmet"
+			xmlns:aarm="http://www.epam.com/trapeznikau/abstract_armor"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractArmor.xsd" namespace="http://www.epam.com/trapeznikau/abstract_armor"/>
+	
+	<xsd:complexType name="Helmet">
+		<xsd:complexContent>
+			<xsd:extension base="aarm:AbstractArmor">
+				<xsd:sequence>
+					<xsd:element name="head_protection" type="xsd:float"/>
+					<xsd:element name="head_girth" type="xsd:float"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

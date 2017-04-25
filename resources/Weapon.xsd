@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.epam.com/trapeznikau/weapon"
+		xmlns:tns="http://www.epam.com/trapeznikau/weapon"
+		xmlns:swo="http://www.epam.com/trapeznikau/sword"
+		xmlns:mac="http://www.epam.com/trapeznikau/mace"
+		xmlns:axe="http://www.epam.com/trapeznikau/axe"
+		xmlns:bow="http://www.epam.com/trapeznikau/bow"
+		elementFormDefault="qualified">
+		
+		<xsd:import schemaLocation="Sword.xsd" namespace="http://www.epam.com/trapeznikau/sword"/>
+		<xsd:import schemaLocation="Mace.xsd" namespace="http://www.epam.com/trapeznikau/mace"/>
+		<xsd:import schemaLocation="Axe.xsd" namespace="http://www.epam.com/trapeznikau/axe"/>
+		<xsd:import schemaLocation="Bow.xsd" namespace="http://www.epam.com/trapeznikau/bow"/>
+					
+			<xsd:complexType name="Weapon">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="sword" type="swo:Sword"/>
+					<xsd:element name="mace" type="mac:Mace"/>
+					<xsd:element name="axe" type="axe:Axe"/>
+					<xsd:element name="bow" type="bow:Bow"/>
+				</xsd:choice>
+			</xsd:complexType>
+			
+</xsd:schema>

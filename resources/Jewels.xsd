@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.epam.com/trapeznikau/jewels"
+		xmlns:tns="http://www.epam.com/trapeznikau/jewels"
+		xmlns:pre="http://www.epam.com/trapeznikau/precious_stone"
+		xmlns:rin="http://www.epam.com/trapeznikau/ring"
+		xmlns:bra="http://www.epam.com/trapeznikau/bracelet"
+		xmlns:cha="http://www.epam.com/trapeznikau/chain"
+		xmlns:san="http://www.epam.com/trapeznikau/sandglass"
+		xmlns:bea="http://www.epam.com/trapeznikau/beads"
+		xmlns:coul="http://www.epam.com/trapeznikau/coulomb"
+		xmlns:cup="http://www.epam.com/trapeznikau/cup"
+		elementFormDefault="qualified">
+		
+		<xsd:import schemaLocation="PreciousStone.xsd" namespace="http://www.epam.com/trapeznikau/precious_stone"/>
+		<xsd:import schemaLocation="Ring.xsd" namespace="http://www.epam.com/trapeznikau/ring"/>
+		<xsd:import schemaLocation="Bracelet.xsd" namespace="http://www.epam.com/trapeznikau/bracelet"/>
+		<xsd:import schemaLocation="Chain.xsd" namespace="http://www.epam.com/trapeznikau/chain"/>
+		<xsd:import schemaLocation="SandGlass.xsd" namespace="http://www.epam.com/trapeznikau/sandglass"/>
+		<xsd:import schemaLocation="Beads.xsd" namespace="http://www.epam.com/trapeznikau/beads"/>
+		<xsd:import schemaLocation="Coulomb.xsd" namespace="http://www.epam.com/trapeznikau/coulomb"/>
+		<xsd:import schemaLocation="Cup.xsd" namespace="http://www.epam.com/trapeznikau/cup"/>
+			
+			<xsd:complexType name="Jewels">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="precious_stone" type="pre:PreciousStone"/>
+					<xsd:element name="ring" type="rin:Ring"/>
+					<xsd:element name="bracelet" type="bra:Bracelet"/>
+					<xsd:element name="chain" type="cha:Chain"/>
+					<xsd:element name="sandglass" type="san:SandGlass"/>
+					<xsd:element name="beads" type="bea:Beads"/>
+					<xsd:element name="coulomb" type="coul:Coulomb"/>
+					<xsd:element name="cup" type="cup:Cup"/>
+				</xsd:choice>
+			</xsd:complexType>
+			
+</xsd:schema>

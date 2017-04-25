@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/sandglass"
+			xmlns:tns="http://www.epam.com/trapeznikau/sandglass"
+			xmlns:jew="http://www.epam.com/trapeznikau/abstract_jewel"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractJewel.xsd" namespace="http://www.epam.com/trapeznikau/abstract_jewel"/>
+	
+	<xsd:complexType name="SandGlass">
+		<xsd:complexContent>
+			<xsd:extension base="jew:AbstractJewel">
+				<xsd:sequence>
+					<xsd:element name="type_sand" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

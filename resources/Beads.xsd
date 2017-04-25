@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/beads"
+			xmlns:tns="http://www.epam.com/trapeznikau/beads"
+			xmlns:jew="http://www.epam.com/trapeznikau/abstract_jewel"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractJewel.xsd" namespace="http://www.epam.com/trapeznikau/abstract_jewel"/>
+	
+	<xsd:complexType name="Beads">
+		<xsd:complexContent>
+			<xsd:extension base="jew:AbstractJewel">
+				<xsd:sequence>
+					<xsd:element name="length" type="xsd:float"/>
+					<xsd:element name="thickness" type="xsd:float"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

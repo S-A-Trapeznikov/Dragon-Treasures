@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/abstract_ancient_artifact"
+			xmlns:tns="http://www.epam.com/trapeznikau/abstract_ancient_artifact"
+			xmlns:trev="http://www.epam.com/trapeznikau/abstract_treasure_valueable"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractTreasureValueable.xsd" namespace="http://www.epam.com/trapeznikau/abstract_treasure_valueable"/>
+	
+	<xsd:complexType name="AbstractAncientArtifact">
+		<xsd:complexContent>
+			<xsd:extension base="trev:AbstractTreasureValueable">
+				<xsd:sequence>
+					<xsd:element name="title" type="xsd:string"/>
+					<xsd:element name="type" type="xsd:string"/>
+					<xsd:element name="age" type="xsd:float"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

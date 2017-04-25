@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/trousers"
+			xmlns:tns="http://www.epam.com/trapeznikau/trousers"
+			xmlns:aarm="http://www.epam.com/trapeznikau/abstract_armor"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractArmor.xsd" namespace="http://www.epam.com/trapeznikau/abstract_armor"/>
+	
+	<xsd:complexType name="Trousers">
+		<xsd:complexContent>
+			<xsd:extension base="aarm:AbstractArmor">
+				<xsd:sequence>
+					<xsd:element name="leg_protection" type="xsd:float"/>
+					<xsd:element name="leg_girth" type="xsd:float"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

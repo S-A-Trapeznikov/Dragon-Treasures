@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"			
+		targetNamespace="http://www.epam.com/trapeznikau/treasures"
+		xmlns:tns="http://www.epam.com/trapeznikau/treasures"
+		xmlns:trev="http://www.epam.com/trapeznikau/treasures_valueable"
+		xmlns:treuv="http://www.epam.com/trapeznikau/treasures_unvalueable"
+		elementFormDefault="qualified">
+		
+		<xsd:import schemaLocation="TreasuresValueable.xsd" namespace="http://www.epam.com/trapeznikau/treasures_valueable"/>
+		<xsd:import schemaLocation="TreasuresUnvalueable.xsd" namespace="http://www.epam.com/trapeznikau/treasures_unvalueable"/>
+	
+		<xsd:element name="treasures" type="tns:Treasures"/>
+	
+		<xsd:complexType name="Treasures" >
+			<xsd:choice minOccurs="1" maxOccurs="unbounded">
+				<xsd:element name="treasures_valueable" type="trev:TreasuresValueable"/>
+				<xsd:element name="treasures_unvalueable" type="treuv:TreasuresUnvalueable"/>								
+			</xsd:choice>
+		</xsd:complexType>
+		
+	
+</xsd:schema>

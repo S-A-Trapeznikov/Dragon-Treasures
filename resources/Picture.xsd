@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/picture"
+			xmlns:tns="http://www.epam.com/trapeznikau/picture"
+			xmlns:art="http://www.epam.com/trapeznikau/abstract_artwork"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractArtwork.xsd" namespace="http://www.epam.com/trapeznikau/abstract_artwork"/>
+	
+	<xsd:complexType name="Picture">
+		<xsd:complexContent>
+			<xsd:extension base="art:AbstractArtwork">
+				<xsd:sequence>
+					<xsd:element name="quality" type="xsd:string"/>
+					<xsd:element name="type_color" type="xsd:string"/>
+					<xsd:element name="date" type="xsd:string"/>
+					<xsd:element name="creater" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

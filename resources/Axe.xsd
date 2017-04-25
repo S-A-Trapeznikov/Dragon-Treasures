@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/axe"
+			xmlns:tns="http://www.epam.com/trapeznikau/axe"
+			xmlns:wea="http://www.epam.com/trapeznikau/abstract_weapon"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractWeapon.xsd" namespace="http://www.epam.com/trapeznikau/abstract_weapon"/>
+	
+	<xsd:complexType name="Axe">
+		<xsd:complexContent>
+			<xsd:extension base="wea:AbstractWeapon">
+				<xsd:sequence>
+					<xsd:element name="type_handle" type="xsd:string"/>
+					<xsd:element name="type_blade" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

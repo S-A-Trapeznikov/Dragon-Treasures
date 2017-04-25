@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/magic_stone"
+			xmlns:tns="http://www.epam.com/trapeznikau/magic_stone"
+			xmlns:aaa="http://www.epam.com/trapeznikau/abstract_ancient_artifact"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractAncientArtifact.xsd" namespace="http://www.epam.com/trapeznikau/abstract_ancient_artifact"/>
+	
+	<xsd:complexType name="MagicStone">
+		<xsd:complexContent>
+			<xsd:extension base="aaa:AbstractAncientArtifact">
+				<xsd:sequence>
+					<xsd:element name="magic_words" type="xsd:string"/>
+					<xsd:element name="translate" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

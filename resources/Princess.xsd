@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/princess"
+			xmlns:tns="http://www.epam.com/trapeznikau/princess"
+			xmlns:treu="http://www.epam.com/trapeznikau/abstract_treasure_unvalueable"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractTreasureUnvalueable.xsd" namespace="http://www.epam.com/trapeznikau/abstract_treasure_unvalueable"/>
+	
+	<xsd:complexType name="Princess">
+		<xsd:complexContent>
+			<xsd:extension base="treu:AbstractTreasureUnvalueable">
+				<xsd:sequence>
+					<xsd:element name="name" type="xsd:string"/>
+					<xsd:element name="age" type="xsd:float"/>
+					<xsd:element name="damnnation" type="xsd:boolean"/>
+					<xsd:element name="birth_place" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/casket"
+			xmlns:tns="http://www.epam.com/trapeznikau/casket"
+			xmlns:trev="http://www.epam.com/trapeznikau/abstract_treasure_valueable"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractTreasureValueable.xsd" namespace="http://www.epam.com/trapeznikau/abstract_treasure_valueable"/>
+	
+	<xsd:complexType name="Casket">
+		<xsd:complexContent>
+			<xsd:extension base="trev:AbstractTreasureValueable">
+				<xsd:sequence>
+					<xsd:element name="size" type="xsd:string"/>
+					<xsd:element name="weight" type="xsd:float"/>
+					<xsd:element name="lock" type="xsd:boolean"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

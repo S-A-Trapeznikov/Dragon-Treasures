@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.epam.com/trapeznikau/armor"
+		xmlns:tns="http://www.epam.com/trapeznikau/armor"
+		xmlns:hel="http://www.epam.com/trapeznikau/helmet"
+		xmlns:spa="http://www.epam.com/trapeznikau/spaulders"
+		xmlns:tro="http://www.epam.com/trapeznikau/trousers"
+		xmlns:boo="http://www.epam.com/trapeznikau/boots"
+		elementFormDefault="qualified">
+		
+		<xsd:import schemaLocation="Helmet.xsd" namespace="http://www.epam.com/trapeznikau/helmet"/>
+		<xsd:import schemaLocation="Spaulders.xsd" namespace="http://www.epam.com/trapeznikau/spaulders"/>
+		<xsd:import schemaLocation="Trousers.xsd" namespace="http://www.epam.com/trapeznikau/trousers"/>
+		<xsd:import schemaLocation="Boots.xsd" namespace="http://www.epam.com/trapeznikau/boots"/>
+					
+			<xsd:complexType name="Armor">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="helmet" type="hel:Helmet"/>
+					<xsd:element name="spaulders" type="spa:Spaulders"/>
+					<xsd:element name="trousers" type="tro:Trousers"/>
+					<xsd:element name="boots" type="boo:Boots"/>
+				</xsd:choice>
+			</xsd:complexType>
+			
+</xsd:schema>

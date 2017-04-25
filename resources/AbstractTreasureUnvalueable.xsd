@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/abstract_treasure_unvalueable"
+			xmlns:tns="http://www.epam.com/trapeznikau/abstract_treasure_unvalueable"
+			xmlns:tre="http://www.epam.com/trapeznikau/abstract_treasure"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractTreasure.xsd" namespace="http://www.epam.com/trapeznikau/abstract_treasure"/>
+		
+		<xsd:complexType name="AbstractTreasureUnvalueable">
+			<xsd:complexContent>
+				<xsd:extension base="tre:AbstractTreasure">
+					
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+			
+</xsd:schema>

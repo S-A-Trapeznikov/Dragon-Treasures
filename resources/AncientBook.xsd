@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.epam.com/trapeznikau/ancient_book"
+			xmlns:tns="http://www.epam.com/trapeznikau/ancient_book"
+			xmlns:aaa="http://www.epam.com/trapeznikau/abstract_ancient_artifact"
+			elementFormDefault="qualified">
+			
+			<xsd:import schemaLocation="AbstractAncientArtifact.xsd" namespace="http://www.epam.com/trapeznikau/abstract_ancient_artifact"/>
+	
+	<xsd:complexType name="AncientBook">
+		<xsd:complexContent>
+			<xsd:extension base="aaa:AbstractAncientArtifact">
+				<xsd:sequence>
+					<xsd:element name="page_count" type="xsd:int"/>
+					<xsd:element name="language" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

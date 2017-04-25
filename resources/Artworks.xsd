@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.epam.com/trapeznikau/artworks"
+		xmlns:tns="http://www.epam.com/trapeznikau/artworks"
+		xmlns:vas="http://www.epam.com/trapeznikau/vase"
+		xmlns:sta="http://www.epam.com/trapeznikau/statue"
+		xmlns:pic="http://www.epam.com/trapeznikau/picture"
+		elementFormDefault="qualified">
+		
+		<xsd:import schemaLocation="Vase.xsd" namespace="http://www.epam.com/trapeznikau/vase"/>
+		<xsd:import schemaLocation="Statue.xsd" namespace="http://www.epam.com/trapeznikau/statue"/>
+		<xsd:import schemaLocation="Picture.xsd" namespace="http://www.epam.com/trapeznikau/picture"/>
+					
+			<xsd:complexType name="Artworks">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="vase" type="vas:Vase"/>
+					<xsd:element name="statue" type="sta:Statue"/>
+					<xsd:element name="picture" type="pic:Picture"/>
+				</xsd:choice>
+			</xsd:complexType>
+			
+</xsd:schema>

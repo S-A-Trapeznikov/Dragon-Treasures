@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tre:treasures xmlns:tre="http://www.epam.com/trapeznikau/treasures"
+			   xmlns:trev="http://www.epam.com/trapeznikau/treasures_valueable"
+			   xmlns:treu="http://www.epam.com/trapeznikau/treasures_unvalueable"
+			   
+			   xmlns:jews="http://www.epam.com/trapeznikau/jewels"
+			   xmlns:pre="http://www.epam.com/trapeznikau/precious_stone"
+			   xmlns:rin="http://www.epam.com/trapeznikau/ring"
+			   xmlns:bra="http://www.epam.com/trapeznikau/bracelet"
+			   xmlns:cha="http://www.epam.com/trapeznikau/chain"
+			   xmlns:san="http://www.epam.com/trapeznikau/sandglass"
+			   xmlns:bea="http://www.epam.com/trapeznikau/beads"
+			   xmlns:coul="http://www.epam.com/trapeznikau/coulomb"
+			   xmlns:cup="http://www.epam.com/trapeznikau/cup"
+			   
+			   xmlns:art="http://www.epam.com/trapeznikau/artworks"
+			   xmlns:vas="http://www.epam.com/trapeznikau/vase"
+			   xmlns:sta="http://www.epam.com/trapeznikau/statue"
+			   xmlns:pic="http://www.epam.com/trapeznikau/picture"
+			   
+			   xmlns:wea="http://www.epam.com/trapeznikau/weapon"
+		   	   xmlns:swo="http://www.epam.com/trapeznikau/sword"
+			   xmlns:mac="http://www.epam.com/trapeznikau/mace"
+			   xmlns:axe="http://www.epam.com/trapeznikau/axe"
+			   xmlns:bow="http://www.epam.com/trapeznikau/bow"
+			   
+			   xmlns:arm="http://www.epam.com/trapeznikau/armor"
+			   xmlns:hel="http://www.epam.com/trapeznikau/helmet"
+			   xmlns:spa="http://www.epam.com/trapeznikau/spaulders"
+			   xmlns:tro="http://www.epam.com/trapeznikau/trousers"
+			   xmlns:boo="http://www.epam.com/trapeznikau/boots"
+			   
+			   xmlns:anc="http://www.epam.com/trapeznikau/ancient_artifacts"
+			   xmlns:abo="http://www.epam.com/trapeznikau/ancient_book"
+			   xmlns:scr="http://www.epam.com/trapeznikau/ancient_scroll"
+			   xmlns:mag="http://www.epam.com/trapeznikau/magic_stone"
+			   xmlns:run="http://www.epam.com/trapeznikau/runic_stone"
+			   xmlns:fos="http://www.epam.com/trapeznikau/ancient_fossil"
+			   xmlns:clo="http://www.epam.com/trapeznikau/ancient_cloth"	
+			   
+			   xmlns:arom="http://www.epam.com/trapeznikau/aroma"
+			   xmlns:cas="http://www.epam.com/trapeznikau/casket"
+			   xmlns:key="http://www.epam.com/trapeznikau/key"
+			   xmlns:egg="http://www.epam.com/trapeznikau/dragon_egg"
+			   xmlns:staf="http://www.epam.com/trapeznikau/staff"
+			   xmlns:prin="http://www.epam.com/trapeznikau/princess"	
+			   
+			   xmlns:atrev="http://www.epam.com/trapeznikau/abstract_treasure_valueable"
+			   xmlns:atreu="http://www.epam.com/trapeznikau/abstract_treasure_unvalueable"
+			   xmlns:ajews="http://www.epam.com/trapeznikau/abstract_jewel"
+			   xmlns:aart="http://www.epam.com/trapeznikau/abstract_artwork"
+			   xmlns:awea="http://www.epam.com/trapeznikau/abstract_weapon"
+			   xmlns:aarm="http://www.epam.com/trapeznikau/abstract_armor"
+			   xmlns:aanc="http://www.epam.com/trapeznikau/abstract_ancient_artifact"
+			  	  
+			   
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://www.epam.com/trapeznikau/treasures Treasures.xsd">
+			
+			
+	<tre:treasures_valueable>
+		<trev:jewels>
+		
+		<jews:cup id="81">
+				<atrev:price>250</atrev:price>
+				<ajews:material>gold</ajews:material>
+				<ajews:weight>150</ajews:weight>
+				<cup:amount>65</cup:amount>
+				<cup:height>70</cup:height>
+			</jews:cup>
+			
+			<jews:precious_stone id="11">
+				<atrev:price>10.0</atrev:price>
+				<ajews:material>Diamond</ajews:material>
+				<ajews:weight>0.015</ajews:weight>
+				<pre:diameter>1.2</pre:diameter>
+				<pre:type>Precious_stone</pre:type>
+			</jews:precious_stone>
+			
+			<jews:precious_stone id="12">
+				<atrev:price>15.0</atrev:price>
+				<ajews:material>Ruby</ajews:material>
+				<ajews:weight>0.051</ajews:weight>
+				<pre:diameter>35.4</pre:diameter>
+				<pre:type>Precious_stone</pre:type>
+			</jews:precious_stone>
+			
+			<jews:precious_stone id="13">
+				<atrev:price>20.0</atrev:price>
+				<ajews:material>Opal</ajews:material>
+				<ajews:weight>0.015</ajews:weight>
+				<pre:diameter>3</pre:diameter>
+				<pre:type>Halfprecious_stone</pre:type>
+			</jews:precious_stone>
+			
+			<jews:ring id="21">
+				<atrev:price>1002.0</atrev:price>
+				<ajews:material>Gold</ajews:material>
+				<ajews:weight>2.7</ajews:weight>
+				<rin:style>vintage</rin:style>
+				<rin:has_precious_stone>true</rin:has_precious_stone>
+			</jews:ring>
+			
+			<jews:ring id="22">
+				<atrev:price>100.0</atrev:price>
+				<ajews:material>Platinum</ajews:material>
+				<ajews:weight>3</ajews:weight>
+				<rin:style>Classic</rin:style>
+				<rin:has_precious_stone>false</rin:has_precious_stone>
+			</jews:ring>
+			
+			<jews:bracelet id="31">
+				<atrev:price>250.0</atrev:price>
+				<ajews:material>Silver</ajews:material>
+				<ajews:weight>12.3</ajews:weight>
+				<bra:style>Classic</bra:style>
+				<bra:girth>19.07</bra:girth>
+				<bra:hardness>Hard</bra:hardness>
+			</jews:bracelet>
+			
+			<jews:bracelet id="32">
+				<atrev:price>500.0</atrev:price>
+				<ajews:material>Gold</ajews:material>
+				<ajews:weight>30</ajews:weight>
+				<bra:style>Vintage</bra:style>
+				<bra:girth>30</bra:girth>
+				<bra:hardness>Medium</bra:hardness>
+			</jews:bracelet>
+			
+			<jews:chain id="41">
+				<atrev:price>0.4</atrev:price>
+				<ajews:material>Gold</ajews:material>
+				<ajews:weight>30</ajews:weight>
+				<cha:type_lock>Lobster</cha:type_lock>
+				<cha:length>10</cha:length>
+				<cha:thickness>0.1</cha:thickness>
+			</jews:chain>
+			
+			<jews:chain id="42">
+				<atrev:price>0.5</atrev:price>
+				<ajews:material>Silver</ajews:material>
+				<ajews:weight>5</ajews:weight>
+				<cha:type_lock>Barrel</cha:type_lock>
+				<cha:length>20</cha:length>
+				<cha:thickness>0.2</cha:thickness>
+			</jews:chain>
+			
+			<jews:sandglass id="51">
+				<atrev:price>300</atrev:price>
+				<ajews:material>Gold</ajews:material>
+				<ajews:weight>100</ajews:weight>
+				<san:type_sand>river</san:type_sand>
+			</jews:sandglass>
+			
+			<jews:sandglass id="52">
+				<atrev:price>250</atrev:price>
+				<ajews:material>Silver</ajews:material>
+				<ajews:weight>25</ajews:weight>
+				<san:type_sand></san:type_sand>
+			</jews:sandglass>
+			
+			<jews:beads id="61">
+				<atrev:price>984</atrev:price>
+				<ajews:material>Emerald</ajews:material>
+				<ajews:weight>0.21</ajews:weight>
+				<bea:length>0.40</bea:length>
+				<bea:thickness>0.03</bea:thickness>
+			</jews:beads>
+			
+			<jews:beads id="62">
+				<atrev:price>0.55</atrev:price>
+				<ajews:material>Coral</ajews:material>
+				<ajews:weight>0.11</ajews:weight>
+				<bea:length>0.55</bea:length>
+				<bea:thickness>0.03</bea:thickness>
+			</jews:beads>		
+			
+			<jews:coulomb id="71">
+				<atrev:price>140</atrev:price>
+				<ajews:material>Gold</ajews:material>
+				<ajews:weight>25</ajews:weight>
+				<coul:size>3.5</coul:size>
+				<coul:form>square</coul:form>
+				<coul:picture>false</coul:picture>			
+			</jews:coulomb>
+			
+			<jews:coulomb id="72">
+				<atrev:price>200</atrev:price>
+				<ajews:material>Metall</ajews:material>
+				<ajews:weight>12.5</ajews:weight>
+				<coul:size>5</coul:size>
+				<coul:form>round</coul:form>
+				<coul:picture>true</coul:picture>
+			</jews:coulomb>
+			
+			<jews:cup id="81">
+				<atrev:price>250</atrev:price>
+				<ajews:material>gold</ajews:material>
+				<ajews:weight>150</ajews:weight>
+				<cup:amount>65</cup:amount>
+				<cup:height>70</cup:height>
+			</jews:cup>
+			
+			<jews:cup id="82">
+				<atrev:price>100</atrev:price>
+				<ajews:material>silver</ajews:material>
+				<ajews:weight>70</ajews:weight>
+				<cup:amount>25</cup:amount>
+				<cup:height>45</cup:height>
+				
+			</jews:cup>			
+			
+		</trev:jewels>
+		
+		<trev:artworks>		
+		
+			<art:vase id="91">
+				<atrev:price>90</atrev:price>
+				<aart:title>Regina Vasorum</aart:title>
+				<aart:type>Hydria</aart:type>
+				<vas:amount>3</vas:amount>
+				<vas:picture>true</vas:picture>
+			</art:vase>				
+		
+			<art:picture id="111">			
+				<atrev:price>90</atrev:price>
+				<aart:title>La Dense</aart:title>
+				 <aart:type>Impessionism</aart:type>	
+				<pic:quality>40</pic:quality>
+				<pic:type_color>oils</pic:type_color>
+				<pic:date>05.06.1910</pic:date>
+				<pic:creater>Henri Matisse</pic:creater>		
+			</art:picture>
+			
+			<art:statue id="121">
+				<atrev:price>200</atrev:price>
+				<aart:title>La Penseur</aart:title>
+				<aart:type>realism</aart:type>
+				<sta:weight>10</sta:weight>
+				<sta:size>9</sta:size>
+				<sta:date>04.02.1882</sta:date>
+				<sta:creater>Francois-Auguste-Rene Rodin</sta:creater>
+			</art:statue>			
+			
+		</trev:artworks>
+		
+		<trev:weapon>
+		
+			<wea:axe id="171">
+				<atrev:price>800</atrev:price>
+				<awea:title>battle</awea:title>
+				<awea:type>soldier</awea:type>
+				<awea:damage>100</awea:damage>
+				<axe:type_handle>single</axe:type_handle>
+				<axe:type_blade>double</axe:type_blade>
+			</wea:axe>
+			
+			<wea:bow id="181">
+				<atrev:price>500</atrev:price>
+				<awea:title>English Bow</awea:title>
+				<awea:type>Long</awea:type>
+				<awea:damage>20</awea:damage>
+				<bow:size>0.75</bow:size>
+				<bow:arrow_type>traditional</bow:arrow_type>
+				<bow:arrow_count>30</bow:arrow_count>
+			</wea:bow>
+			
+			<wea:mace id="161">
+				<atrev:price>50</atrev:price>
+				<awea:title>plastic</awea:title>
+				<awea:type>simple</awea:type>
+				<awea:damage>30</awea:damage>
+				<mac:size>3</mac:size>
+			</wea:mace>
+			
+			<wea:sword id="141">
+				<atrev:price>191</atrev:price>
+				<awea:title>Jian</awea:title>
+				<awea:type>Straight</awea:type>
+				<awea:damage>300</awea:damage>
+				<swo:material>Steel</swo:material>
+				<swo:weight>20</swo:weight>
+				<swo:length>0.72</swo:length>
+				<swo:blade_thikness>0.2</swo:blade_thikness>
+			</wea:sword>
+			
+		</trev:weapon>
+		
+		<trev:armor>
+		
+			<arm:helmet id="191">
+				<atrev:price>100</atrev:price>
+				<aarm:title>Bell</aarm:title>
+				<aarm:type>bike</aarm:type>
+				<aarm:material>plastic</aarm:material>
+				<hel:head_protection>20</hel:head_protection>
+				<hel:head_girth>20</hel:head_girth>
+			</arm:helmet>
+			
+			<arm:spaulders id="201">
+				<atrev:price>80</atrev:price>
+				<aarm:title>Gothic</aarm:title>
+				<aarm:type>ancient</aarm:type>
+				<aarm:material>metal</aarm:material>
+				<spa:shoulders_protection>60</spa:shoulders_protection>
+				<spa:shoulders_girth>150</spa:shoulders_girth>
+			</arm:spaulders>
+			
+			<arm:boots id="231">
+				<atrev:price>30</atrev:price>
+				<aarm:title>EgyptStyle</aarm:title>
+				<aarm:type>Lowshoes</aarm:type>
+				<aarm:material>wood</aarm:material>
+				<boo:foot_protection>10</boo:foot_protection>
+				<boo:foot_girth>30</boo:foot_girth>				
+			</arm:boots>
+			
+			<arm:trousers id="221">
+				<atrev:price>200</atrev:price>
+				<aarm:title>Warmtrousers</aarm:title>
+				<aarm:type>Warm</aarm:type>
+				<aarm:material>textile</aarm:material>
+				<tro:leg_protection>20</tro:leg_protection>
+				<tro:leg_girth>30</tro:leg_girth>
+			</arm:trousers>
+			
+		</trev:armor>
+		
+		<trev:ancient_artifacts>
+		
+			<anc:ancient_book id="241">
+				<atrev:price>16</atrev:price>
+				<aanc:title>DragonFire</aanc:title>
+				<aanc:type>Veryold</aanc:type>
+				<aanc:age>100</aanc:age>
+				<abo:page_count>300</abo:page_count>
+				<abo:language>en-Us</abo:language>
+			</anc:ancient_book>
+			
+			<anc:ancient_scroll id="251">
+				<atrev:price>300</atrev:price>
+				<aanc:title>Scroll of magic things</aanc:title>
+				<aanc:type>green</aanc:type>
+				<aanc:age>500</aanc:age>
+				<scr:text>You have to read this scroll because of some interesting things</scr:text>
+				<scr:magic_school>water</scr:magic_school>
+			</anc:ancient_scroll>
+			
+			<anc:magic_stone id="261">
+				<atrev:price>200</atrev:price>
+				<aanc:title>tourmaline</aanc:title>
+				<aanc:type>green</aanc:type>
+				<aanc:age>96</aanc:age>
+				<mag:magic_words>abrakadabra</mag:magic_words>
+				<mag:translate>Let there be ligh</mag:translate>
+			</anc:magic_stone>
+			
+			<anc:runic_stone id="271">
+				<atrev:price>200</atrev:price>
+				<aanc:title>plantain</aanc:title>
+				<aanc:type>Elder</aanc:type>
+				<aanc:age>400</aanc:age>
+				<run:rune>gebo</run:rune>
+				<run:rune_count>1</run:rune_count>
+				<run:rune_translate>travel protection</run:rune_translate>
+			</anc:runic_stone>
+			
+			<anc:ancient_fossil id="281">
+				<atrev:price>100</atrev:price>
+				<aanc:title>ammonite</aanc:title>
+				<aanc:type>ancient</aanc:type>
+				<aanc:age>300</aanc:age>
+				<fos:accessory>squids</fos:accessory>							
+			</anc:ancient_fossil>
+			
+			<anc:ancient_cloth id="291">
+				<atrev:price>400</atrev:price>
+				<aanc:title>China</aanc:title>
+				<aanc:type>silk</aanc:type>
+				<aanc:age>100</aanc:age>
+				<clo:size>200</clo:size>
+				<clo:material>silk</clo:material>
+				<clo:pattern>true</clo:pattern>
+				<clo:type_pattern>roll</clo:type_pattern>
+			</anc:ancient_cloth>
+		
+		</trev:ancient_artifacts>
+		
+		<trev:aroma id="321">
+			<atrev:price>100</atrev:price>
+			<arom:title>Simple</arom:title>
+			<arom:type>sweet</arom:type>
+			<arom:count>10</arom:count>
+		</trev:aroma>
+		
+		<trev:casket id="121">
+			<atrev:price>50</atrev:price>
+			<cas:size>2</cas:size>
+			<cas:weight>2.5</cas:weight>
+			<cas:lock>true</cas:lock>
+		</trev:casket>
+		
+		<trev:key id="131">
+			<atrev:price>1</atrev:price>
+			<key:size>2</key:size>
+			<key:type>metall</key:type>
+			<key:opens>casket</key:opens>
+		</trev:key>
+		
+		<trev:staff id="151">
+			<atrev:price>20</atrev:price>
+			<staf:title>Kanabo</staf:title>
+			<staf:type>Battle</staf:type>
+			<staf:length>2</staf:length>
+			<staf:type_tip>Steel</staf:type_tip>
+		</trev:staff>
+		
+		<trev:dragon_egg id="291">
+			<atrev:price>200</atrev:price>
+			<egg:size>3</egg:size>
+			<egg:type_dragon>Fire</egg:type_dragon>
+		</trev:dragon_egg>
+		
+	</tre:treasures_valueable>
+	
+	<tre:treasures_unvalueable>
+		<treu:princess id="321">
+			<prin:name>Fiona</prin:name>
+			<prin:age>30</prin:age>
+			<prin:damnnation>true</prin:damnnation>
+			<prin:birth_place>Faraway Kingdom</prin:birth_place>
+		</treu:princess>
+	</tre:treasures_unvalueable>
+</tre:treasures>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.epam.com/trapeznikau/treasures_valueable"
+		xmlns:tns="http://www.epam.com/trapeznikau/treasures_valueable"
+		xmlns:jews="http://www.epam.com/trapeznikau/jewels"
+		xmlns:art="http://www.epam.com/trapeznikau/artworks"
+		xmlns:wea="http://www.epam.com/trapeznikau/weapon"
+		xmlns:arm="http://www.epam.com/trapeznikau/armor"
+		xmlns:anart="http://www.epam.com/trapeznikau/ancient_artifacts"
+		xmlns:cas="http://www.epam.com/trapeznikau/casket"
+		xmlns:key="http://www.epam.com/trapeznikau/key"
+		xmlns:sta="http://www.epam.com/trapeznikau/staff"
+		xmlns:egg="http://www.epam.com/trapeznikau/dragon_egg"
+		xmlns:arom="http://www.epam.com/trapeznikau/aroma"
+		elementFormDefault="qualified">
+		
+		<xsd:import schemaLocation="Jewels.xsd" namespace="http://www.epam.com/trapeznikau/jewels"/>
+		<xsd:import schemaLocation="Artworks.xsd" namespace="http://www.epam.com/trapeznikau/artworks"/>
+		<xsd:import schemaLocation="Weapon.xsd" namespace="http://www.epam.com/trapeznikau/weapon"/>
+		<xsd:import schemaLocation="Armor.xsd" namespace="http://www.epam.com/trapeznikau/armor"/>
+		<xsd:import schemaLocation="AncientArtifacts.xsd" namespace="http://www.epam.com/trapeznikau/ancient_artifacts"/>
+		<xsd:import schemaLocation="Casket.xsd" namespace="http://www.epam.com/trapeznikau/casket"/>
+		<xsd:import schemaLocation="Key.xsd" namespace="http://www.epam.com/trapeznikau/key"/>
+		<xsd:import schemaLocation="Staff.xsd" namespace="http://www.epam.com/trapeznikau/staff"/>
+		<xsd:import schemaLocation="DragonEgg.xsd" namespace="http://www.epam.com/trapeznikau/dragon_egg"/>
+		<xsd:import schemaLocation="Aroma.xsd" namespace="http://www.epam.com/trapeznikau/aroma"/>
+		
+		
+		
+			<xsd:complexType name="TreasuresValueable">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="jewels" type="jews:Jewels"/>
+					<xsd:element name="artworks" type="art:Artworks"/>
+					<xsd:element name="weapon" type="wea:Weapon"/>
+					<xsd:element name="armor" type="arm:Armor"/>
+					<xsd:element name="ancient_artifacts" type="anart:AncientArtifacts"/>
+					<xsd:element name="casket" type="cas:Casket"/>
+					<xsd:element name="key" type="key:Key"/>
+					<xsd:element name="staff" type="sta:Staff"/>
+					<xsd:element name="dragon_egg" type="egg:DragonEgg"/>
+					<xsd:element name="aroma" type="arom:Aroma"/>
+		  		</xsd:choice>
+			</xsd:complexType>
+			
+</xsd:schema>

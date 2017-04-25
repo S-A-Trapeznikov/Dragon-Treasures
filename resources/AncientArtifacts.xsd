@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.epam.com/trapeznikau/ancient_artifacts"
+		xmlns:tns="http://www.epam.com/trapeznikau/ancient_artifacts"
+		xmlns:abo="http://www.epam.com/trapeznikau/ancient_book"
+		xmlns:scr="http://www.epam.com/trapeznikau/ancient_scroll"
+		xmlns:mag="http://www.epam.com/trapeznikau/magic_stone"
+		xmlns:run="http://www.epam.com/trapeznikau/runic_stone"
+		xmlns:fos="http://www.epam.com/trapeznikau/ancient_fossil"
+		xmlns:clo="http://www.epam.com/trapeznikau/ancient_cloth"		
+		elementFormDefault="qualified">
+		
+		<xsd:import schemaLocation="AncientBook.xsd" namespace="http://www.epam.com/trapeznikau/ancient_book"/>
+		<xsd:import schemaLocation="AncientScroll.xsd" namespace="http://www.epam.com/trapeznikau/ancient_scroll"/>
+		<xsd:import schemaLocation="MagicStone.xsd" namespace="http://www.epam.com/trapeznikau/magic_stone"/>
+		<xsd:import schemaLocation="RunicStone.xsd" namespace="http://www.epam.com/trapeznikau/runic_stone"/>
+		<xsd:import schemaLocation="AncientFossil.xsd" namespace="http://www.epam.com/trapeznikau/ancient_fossil"/>
+		<xsd:import schemaLocation="AncientCloth.xsd" namespace="http://www.epam.com/trapeznikau/ancient_cloth"/>
+					
+			<xsd:complexType name="AncientArtifacts">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="ancient_book" type="abo:AncientBook"/>
+					<xsd:element name="ancient_scroll" type="scr:AncientScroll"/>
+					<xsd:element name="magic_stone" type="mag:MagicStone"/>
+					<xsd:element name="runic_stone" type="run:RunicStone"/>
+					<xsd:element name="ancient_fossil" type="fos:AncientFossil"/>
+					<xsd:element name="ancient_cloth" type="clo:AncientCloth"/>
+				</xsd:choice>
+			</xsd:complexType>
+			
+</xsd:schema>
