@@ -2,9 +2,9 @@ package com.epam.trapeznikau.bean;
 
 public abstract class Treasure {
 	
-	private int id;
+	protected int id;
 	
-	protected Treasure() {}
+	public Treasure() {}
 
 	public Treasure(int id){
 		this.id=id;
@@ -17,4 +17,5 @@ public abstract class Treasure {
 	public void setId(int id) {
 		this.id = id;
 	}
+		
 }

@@ -2,8 +2,16 @@ package com.epam.trapeznikau.bean;
 
 public abstract class Jewel extends TreasureValueable{
 	
-	private String material;
-	private Float weight;
+	protected String material;
+	protected float weight;
+	
+	public Jewel (){}
+
+	protected Jewel(int id,float price,String material, float weight) {
+		super(id, price);
+		this.material = material;
+		this.weight = weight;
+	}
 	
 	public String getMaterial() {
 		return material;
@@ -20,15 +28,6 @@ public abstract class Jewel extends TreasureValueable{
 	public void setWeight(Float weight) {
 		this.weight = weight;
 	}
-
-	public Jewel (){}
-
-	protected Jewel(Integer id,String material, Float weight) {
-		super(id);
-		this.material = material;
-		this.weight = weight;
-	}
 	
 	
-
 }

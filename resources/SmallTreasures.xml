@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tre:treasures xmlns:tre="http://www.epam.com/trapeznikau/treasures"
+			   xmlns:trev="http://www.epam.com/trapeznikau/treasures_valueable"
+			   xmlns:treu="http://www.epam.com/trapeznikau/treasures_unvalueable"
+			   
+			   xmlns:jews="http://www.epam.com/trapeznikau/jewels"
+			   xmlns:pre="http://www.epam.com/trapeznikau/precious_stone"
+			  			   
+			   xmlns:art="http://www.epam.com/trapeznikau/artworks"
+			   xmlns:vas="http://www.epam.com/trapeznikau/vase"
+			   			   
+			   xmlns:wea="http://www.epam.com/trapeznikau/weapon"
+		   	   xmlns:axe="http://www.epam.com/trapeznikau/axe"
+			  			   
+			   xmlns:arm="http://www.epam.com/trapeznikau/armor"
+			   xmlns:hel="http://www.epam.com/trapeznikau/helmet"
+			  			   
+			   xmlns:anc="http://www.epam.com/trapeznikau/ancient_artifacts"
+			   xmlns:abo="http://www.epam.com/trapeznikau/ancient_book"
+			   			   
+			   xmlns:arom="http://www.epam.com/trapeznikau/aroma"
+			   xmlns:prin="http://www.epam.com/trapeznikau/princess"
+			  			   
+			   xmlns:atrev="http://www.epam.com/trapeznikau/abstract_treasure_valueable"
+			   xmlns:atreu="http://www.epam.com/trapeznikau/abstract_treasure_unvalueable"
+			   xmlns:ajews="http://www.epam.com/trapeznikau/abstract_jewel"
+			   xmlns:aart="http://www.epam.com/trapeznikau/abstract_artwork"
+			   xmlns:awea="http://www.epam.com/trapeznikau/abstract_weapon"
+			   xmlns:aarm="http://www.epam.com/trapeznikau/abstract_armor"
+			   xmlns:aanc="http://www.epam.com/trapeznikau/abstract_ancient_artifact"
+			  	  
+			   
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://www.epam.com/trapeznikau/treasures Treasures.xsd">
+			
+			
+	<tre:treasures_valueable>
+		<trev:jewels>
+					
+			<jews:precious_stone id="11">
+				<atrev:price>10.0</atrev:price>
+				<ajews:material>Diamond</ajews:material>
+				<ajews:weight>0.015</ajews:weight>
+				<pre:diameter>1.2</pre:diameter>
+				<pre:type>Precious_stone</pre:type>
+			</jews:precious_stone>
+					
+		</trev:jewels>
+		
+		<trev:artworks>		
+		
+			<art:vase id="91">
+				<atrev:price>90</atrev:price>
+				<aart:title>Regina Vasorum</aart:title>
+				<aart:type>Hydria</aart:type>
+				<vas:amount>3</vas:amount>
+				<vas:picture>true</vas:picture>
+			</art:vase>				
+								
+		</trev:artworks>
+		
+		<trev:weapon>
+		
+			<wea:axe id="171">
+				<atrev:price>800</atrev:price>
+				<awea:title>battle</awea:title>
+				<awea:type>soldier</awea:type>
+				<awea:damage>100</awea:damage>
+				<axe:type_handle>single</axe:type_handle>
+				<axe:type_blade>double</axe:type_blade>
+			</wea:axe>			
+				
+		</trev:weapon>
+		
+		<trev:armor>
+		
+			<arm:helmet id="191">
+				<atrev:price>100</atrev:price>
+				<aarm:title>Bell</aarm:title>
+				<aarm:type>bike</aarm:type>
+				<aarm:material>plastic</aarm:material>
+				<hel:head_protection>20</hel:head_protection>
+				<hel:head_girth>20</hel:head_girth>
+			</arm:helmet>
+						
+		</trev:armor>
+		
+		<trev:ancient_artifacts>
+		
+			<anc:ancient_book id="241">
+				<atrev:price>16</atrev:price>
+				<aanc:title>DragonFire</aanc:title>
+				<aanc:type>Veryold</aanc:type>
+				<aanc:age>100</aanc:age>
+				<abo:page_count>300</abo:page_count>
+				<abo:language>en-Us</abo:language>
+			</anc:ancient_book>			
+					
+		</trev:ancient_artifacts>
+		
+		<trev:aroma id="321">
+			<atrev:price>100</atrev:price>
+			<arom:title>Simple</arom:title>
+			<arom:type>sweet</arom:type>
+			<arom:count>10</arom:count>
+		</trev:aroma>
+		
+		
+	</tre:treasures_valueable>
+	
+	<tre:treasures_unvalueable>
+		<treu:princess id="321">
+			<prin:name>Fiona</prin:name>
+			<prin:age>30</prin:age>
+			<prin:damnnation>true</prin:damnnation>
+			<prin:birth_place>Faraway Kingdom</prin:birth_place>
+		</treu:princess>
+		
+	</tre:treasures_unvalueable>
+</tre:treasures>

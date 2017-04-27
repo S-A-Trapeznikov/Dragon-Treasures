@@ -2,14 +2,15 @@ package com.epam.trapeznikau.bean;
 
 public abstract class TreasureValueable extends Treasure{
 	
-	private float price;
+	protected float price;
 	
 	public TreasureValueable(){
 		super();
 	}
 
-	public TreasureValueable(int id){
+	public TreasureValueable(int id, float price){
 		super(id);
+		this.price=price;
 	}
 
 	public float getPrice() {
