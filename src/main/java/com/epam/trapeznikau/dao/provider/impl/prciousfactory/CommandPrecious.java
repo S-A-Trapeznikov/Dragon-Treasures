@@ -1,4 +1,4 @@
-package com.epam.trapeznikau.controller.impl.treasurefactory;
+package com.epam.trapeznikau.dao.provider.impl.prciousfactory;
 
 import com.epam.trapeznikau.bean.PreciousStone;
 

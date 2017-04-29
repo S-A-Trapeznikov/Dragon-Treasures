@@ -1,4 +1,4 @@
-package com.epam.trapeznikau.controller;
+package com.epam.trapeznikau.dao.provider;
 
 import com.epam.trapeznikau.bean.Treasure;
 

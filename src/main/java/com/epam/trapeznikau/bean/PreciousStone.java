@@ -30,16 +30,46 @@ public class PreciousStone extends Jewel {
 	public void setType(String type) {
 		this.type = type;
 	}
-
-	@Override
-	public float calculationValue() {
-		// TODO Auto-generated method stub
-		return 0;
-	}	
 	
 
 	@Override
 	public String toString() {
-		return "PreciousStone [diameter=" + diameter + ", type=" + type + ", id=" + super.id +", price=" + super.price +", material=" + super.material+ ", weight=" + super.weight+"]";
+		return "PreciousStone [diameter=" + diameter + ", type=" + type + ", id=" + getId() +", price=" + getPrice() +", material=" + getMaterial()+ ", weight=" + getWeight()+"]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + Float.floatToIntBits(diameter);
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (!super.equals(obj)) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		PreciousStone other = (PreciousStone) obj;
+		if (Float.floatToIntBits(diameter) != Float.floatToIntBits(other.diameter)) {
+			return false;
+		}
+		if (type == null) {
+			if (other.type != null) {
+				return false;
+			}
+		} else if (!type.equals(other.type)) {
+			return false;
+		}
+		return true;
+	}
+	
+	
 }

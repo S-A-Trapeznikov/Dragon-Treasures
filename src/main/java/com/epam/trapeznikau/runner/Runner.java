@@ -1,29 +1,19 @@
 package com.epam.trapeznikau.runner;
 
-import java.io.IOException;
+import java.util.Iterator;
 
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.XMLReaderFactory;
-
-import com.epam.trapeznikau.dao.TreasureSaxHandler;
+import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.service.ServiceFactory;
 
 public class Runner {
 	
 	public static void main(String args []){
 		
-		try {
-			XMLReader reader = XMLReaderFactory.createXMLReader();
-			TreasureSaxHandler handler = new TreasureSaxHandler();
-			reader.setContentHandler(handler);
-			reader.parse(new InputSource("resources/SmallTreasures.xml"));
-		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		ServiceFactory factory = ServiceFactory.getInstance();
+
+		Iterator<Treasure> it = factory.getOperation().read().iterator();
+		while (it.hasNext()){
+			System.out.println(it.next()+"   ");			
 		}
 		
 	}

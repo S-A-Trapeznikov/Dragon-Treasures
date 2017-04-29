@@ -1,7 +1,7 @@
-package com.epam.trapeznikau.controller.impl.treasurefactory.impl;
+package com.epam.trapeznikau.dao.provider.impl.preciousfactory.impl;
 
 import com.epam.trapeznikau.bean.PreciousStone;
-import com.epam.trapeznikau.controller.impl.treasurefactory.CommandPrecious;
+import com.epam.trapeznikau.dao.provider.impl.prciousfactory.CommandPrecious;
 
 public class SetMaterial implements CommandPrecious{
 
