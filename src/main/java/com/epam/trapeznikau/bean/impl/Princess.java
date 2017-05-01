@@ -1,6 +1,8 @@
-package com.epam.trapeznikau.bean;
+package com.epam.trapeznikau.bean.impl;
 
-public class Princess extends Treasure {
+import com.epam.trapeznikau.bean.abstarct.Treasure;
+
+public class Princess extends Treasure  {
 
 	private String name;
 	private Integer age;
@@ -103,5 +105,13 @@ public class Princess extends Treasure {
 			return false;
 		}
 		return true;
+	}
+	
+	@Override
+	public String toString() {
+		return "Princess [id = "+getId()+", name=" + name + ", age=" + age + ", damnnation=" + damnnation + ", birthPalce=" + birthPalce
+				+ "]";
 	}	
+	
+	
 }

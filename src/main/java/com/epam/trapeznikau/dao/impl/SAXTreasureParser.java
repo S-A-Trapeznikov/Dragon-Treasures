@@ -8,11 +8,11 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
 import com.epam.trapeznikau.dao.TreasureDAO;
 import com.epam.trapeznikau.dao.impl.treasurepaser.TreasureSaxHandler;
 
-public class SAXParser implements TreasureDAO{
+public class SAXTreasureParser implements TreasureDAO{
 
 	@Override
 	public List<Treasure> read() {

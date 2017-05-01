@@ -1,4 +1,4 @@
-package com.epam.trapeznikau.bean;
+package com.epam.trapeznikau.bean.abstarct;
 
 import java.io.Serializable;
 

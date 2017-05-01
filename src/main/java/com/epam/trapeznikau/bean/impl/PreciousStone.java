@@ -1,4 +1,6 @@
-package com.epam.trapeznikau.bean;
+package com.epam.trapeznikau.bean.impl;
+
+import com.epam.trapeznikau.bean.abstarct.Jewel;
 
 public class PreciousStone extends Jewel {
 	
@@ -69,6 +71,16 @@ public class PreciousStone extends Jewel {
 			return false;
 		}
 		return true;
+	}
+
+	@Override
+	public String manufactureMaterial() {
+		return getMaterial();
+	}
+
+	@Override
+	public Float weightCalculation() {
+		return getWeight();
 	}
 	
 	

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
 import com.epam.trapeznikau.dao.provider.impl.prciousfactory.PreciousStoneBuilder;
 
 public class ProviderTreasureFactory {

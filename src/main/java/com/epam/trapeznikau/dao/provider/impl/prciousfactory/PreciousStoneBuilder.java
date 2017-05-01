@@ -3,8 +3,8 @@ package com.epam.trapeznikau.dao.provider.impl.prciousfactory;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.epam.trapeznikau.bean.PreciousStone;
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
+import com.epam.trapeznikau.bean.impl.PreciousStone;
 import com.epam.trapeznikau.dao.provider.TreasureFactory;
 import com.epam.trapeznikau.dao.provider.impl.preciousfactory.impl.SetDiameter;
 import com.epam.trapeznikau.dao.provider.impl.preciousfactory.impl.SetId;

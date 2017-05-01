@@ -2,7 +2,7 @@ package com.epam.trapeznikau.dao;
 
 import java.util.List;
 
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
 
 public interface TreasureDAO {
 	

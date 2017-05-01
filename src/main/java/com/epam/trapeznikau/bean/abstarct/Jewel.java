@@ -1,11 +1,16 @@
-package com.epam.trapeznikau.bean;
+package com.epam.trapeznikau.bean.abstarct;
 
-public abstract class Jewel extends TreasureValueable{
+import com.epam.trapeznikau.bean.Weightable;
+import com.epam.trapeznikau.bean.Materiable;
+
+public abstract class Jewel extends TreasureValuable implements Materiable, Weightable{
 	
 	private String material;
 	private float weight;
 	
-	public Jewel (){}
+	protected Jewel (){
+		super();
+	}
 
 	protected Jewel(int id,float price,String material, float weight) {
 		super(id, price);
@@ -62,6 +67,7 @@ public abstract class Jewel extends TreasureValueable{
 		}
 		return true;
 	}
+	
 	
 	
 }

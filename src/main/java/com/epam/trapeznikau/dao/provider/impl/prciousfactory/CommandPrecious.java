@@ -1,6 +1,6 @@
 package com.epam.trapeznikau.dao.provider.impl.prciousfactory;
 
-import com.epam.trapeznikau.bean.PreciousStone;
+import com.epam.trapeznikau.bean.impl.PreciousStone;
 
 public interface CommandPrecious {
 	

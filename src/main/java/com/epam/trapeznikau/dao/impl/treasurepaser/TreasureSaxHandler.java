@@ -8,7 +8,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
 import com.epam.trapeznikau.dao.provider.ProviderTreasureFactory;
 
 public class TreasureSaxHandler extends DefaultHandler{

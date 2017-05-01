@@ -7,7 +7,7 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
 import com.epam.trapeznikau.dao.provider.ProviderTreasureFactory;
 
 public class TreasureStaxParser {

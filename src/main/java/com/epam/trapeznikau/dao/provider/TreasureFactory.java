@@ -1,6 +1,6 @@
 package com.epam.trapeznikau.dao.provider;
 
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
 
 public interface TreasureFactory {
 	

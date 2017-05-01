@@ -1,6 +1,6 @@
 package com.epam.trapeznikau.dao.provider.impl.preciousfactory.impl;
 
-import com.epam.trapeznikau.bean.PreciousStone;
+import com.epam.trapeznikau.bean.impl.PreciousStone;
 import com.epam.trapeznikau.dao.provider.impl.prciousfactory.CommandPrecious;
 
 public class SetDiameter implements CommandPrecious{

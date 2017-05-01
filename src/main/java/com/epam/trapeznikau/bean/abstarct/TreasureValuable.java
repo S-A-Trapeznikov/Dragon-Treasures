@@ -1,14 +1,14 @@
-package com.epam.trapeznikau.bean;
+package com.epam.trapeznikau.bean.abstarct;
 
-public abstract class TreasureValueable extends Treasure{
+public abstract class TreasureValuable extends Treasure{
 	
 	private float price;
 	
-	public TreasureValueable(){
+	protected TreasureValuable(){
 		super();
 	}
 
-	public TreasureValueable(int id, float price){
+	protected TreasureValuable(int id, float price){
 		super(id);
 		this.price=price;
 	}
@@ -40,11 +40,14 @@ public abstract class TreasureValueable extends Treasure{
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		TreasureValueable other = (TreasureValueable) obj;
+		TreasureValuable other = (TreasureValuable) obj;
 		if (Float.floatToIntBits(price) != Float.floatToIntBits(other.price)) {
 			return false;
 		}
 		return true;
 	}
+	
+	
+	
 }
 	

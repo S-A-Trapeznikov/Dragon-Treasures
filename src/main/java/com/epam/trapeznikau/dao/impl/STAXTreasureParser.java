@@ -9,11 +9,11 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
-import com.epam.trapeznikau.bean.Treasure;
+import com.epam.trapeznikau.bean.abstarct.Treasure;
 import com.epam.trapeznikau.dao.TreasureDAO;
 import com.epam.trapeznikau.dao.impl.treasurepaser.TreasureStaxParser;
 
-public class STAXParser implements TreasureDAO{
+public class STAXTreasureParser implements TreasureDAO{
 
 	@Override
 	public List<Treasure> read() {
