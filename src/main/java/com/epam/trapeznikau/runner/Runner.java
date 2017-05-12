@@ -13,15 +13,16 @@ public class Runner {
 		
 		ServiceFactory factory = ServiceFactory.getInstance();
 		List<Treasure> treasures = factory.getOperation().read();
+		Iterator<Treasure> it = treasures.iterator();
 //		Iterator<Treasure> it = factory.getOperation().searchListTreasureByMaterial("Diamond").iterator();
 //		Iterator<Treasure> it = factory.getOperation().searchListTreasureByPrice(9, 12).iterator();
 //		Iterator<Treasure> it = factory.getOperation().searchListTreasureByWeight(0.015F).iterator();//		
-//		while (it.hasNext()){
-//			System.out.println(it.next());			
-//		}
+		while (it.hasNext()){
+			System.out.println(it.next());			
+		}
 		
-		Treasure treasure = factory.getOperation().mostExpensiveTreasure();
-		System.out.println(treasure.toString());
+//		Treasure treasure = factory.getOperation().mostExpensiveTreasure();
+//		System.out.println(treasure.toString());
 	}
 
 }

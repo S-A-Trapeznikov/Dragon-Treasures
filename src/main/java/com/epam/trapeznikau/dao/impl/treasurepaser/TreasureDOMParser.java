@@ -3,8 +3,6 @@ package com.epam.trapeznikau.dao.impl.treasurepaser;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.processing.SupportedSourceVersion;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;

@@ -1,4 +1,4 @@
-package com.epam.trapeznikau.dao.provider.impl.prciousfactory;
+package com.epam.trapeznikau.dao.provider.impl.preciousfactory;
 
 import java.util.HashMap;
 import java.util.Map;
